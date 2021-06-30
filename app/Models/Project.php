@@ -460,6 +460,13 @@ class Project extends Model
         return optional($this->project_status)->name;
     }
 
+    public function getPipolCodeAttribute()
+    {
+        return $this->review
+            ? $this->review->pipol_code
+            : ($this->pipol->pipol_code ?? 'NO DATA');
+    }
+
     // relationships
 
     public function scopeOwn($query)

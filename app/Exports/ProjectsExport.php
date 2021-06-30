@@ -29,6 +29,7 @@ class ProjectsExport implements FromQuery, WithMapping, WithHeadings
     {
         return [
             $row->id,
+            $row->pipol_code,
             $row->title,
             $row->office->acronym ?? '',
             $row->pap_type->name ?? '',
@@ -51,6 +52,7 @@ class ProjectsExport implements FromQuery, WithMapping, WithHeadings
     {
         return [
             '#',
+            'PIPOL Code',
             'Title',
             'Office',
             'PAP Type',

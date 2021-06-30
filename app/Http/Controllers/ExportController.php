@@ -16,14 +16,14 @@ class ExportController extends Controller
     public function index()
     {
         $links = [
-            [
-                'title' => 'Download Projects as JSON',
-                'desc'  => 'Export data of projects as JSON',
-                'link'  => route('projects.json'),
-            ],
+//            [
+//                'title' => 'Download Projects as JSON',
+//                'desc'  => 'Export data of projects as JSON',
+//                'link'  => route('projects.json'),
+//            ],
             [
                 'title' => 'Project Summary',
-                'desc'  => 'Contains title, office, pap type, project status, spatial coverage, target start year, target end year, main pdp chapter, funding source, implementation mode, budget tier, and total project cost',
+                'desc'  => 'Contains title, pipol code, office, pap type, project status, spatial coverage, target start year, target end year, main pdp chapter, funding source, implementation mode, budget tier, and total project cost',
                 'link'  => route('exports.projects'),
             ],
             [
